@@ -1,6 +1,6 @@
 # Docsie MCP
 
-Docsie MCP is Docsie's remote Model Context Protocol server for documentation workflows, scoped knowledge retrieval, AI credit workflows, and video-to-docs automation.
+Docsie MCP is Docsie's remote Model Context Protocol server for documentation workflows, scoped knowledge retrieval, and video-to-docs automation.
 
 ## Remote Server
 
@@ -31,7 +31,7 @@ Docsie MCP lets MCP-compatible AI clients connect to Docsie so users can:
 - Fetch Docsie article content
 - Run scoped Docsie AI workflows
 - Submit and monitor video-to-docs jobs
-- Quote and purchase Docsie AI credits through approved billing flows
+- Request approved payment options for extended Docsie automation workflows
 
 Users authenticate with Docsie, choose an organization and workspace context, and grant explicit permission packs before tools are exposed.
 
@@ -82,22 +82,22 @@ Common permission packs include:
 - `video_docs`: video-to-docs workflows
 - `imports`: file import, website extraction, and research workflows
 - `publishing`: deployments, visibility, file requests, and related publishing tools
-- `billing`: AI credit quotes, Stripe Checkout links, and x402 payment requests
+- `billing`: approved paid workflow options through Stripe Checkout and x402 payment requests
 - `agent_runs`: start, monitor, cancel, and fetch remote Docsie background agent runs
 
 Use the smallest permission pack set needed for your workflow.
 
-## Agentic Payments
+## Paid Workflow Controls
 
-Credit-consuming MCP workflows use the organization's Docsie AI credit balance.
+Some Docsie automation workflows may require additional processing capacity.
 
-When more credits are required, Docsie MCP can return:
+When more capacity is required, Docsie MCP can return:
 
-- A Stripe Checkout fallback through `ai_credits_checkout`
-- An x402 payment request through `ai_credits_x402_payment_request`
-- Structured paywall data that explains required credits, available credits, and retry steps
+- A hosted Stripe Checkout fallback
+- An x402 payment request for compatible agent clients
+- Structured next steps that explain the requested workflow, required authorization, and retry path
 
-Agentic payment tools require the `billing` permission pack. x402 credit grants occur only after payment verification and settlement.
+Agentic payment tools require the `billing` permission pack. Paid workflow access is granted only after payment verification and settlement.
 
 ## Example Prompts
 
@@ -105,9 +105,9 @@ Agentic payment tools require the `billing` permission pack. x402 credit grants 
 List my Docsie workspaces.
 Search Docsie knowledge for onboarding API documentation.
 Fetch the article content for the selected Docsie article.
-Estimate the Docsie AI credits needed for a video-to-docs job.
-Create a Stripe Checkout link for 10,000 Docsie AI credits.
-Build an x402 payment request for 10,000 Docsie AI credits.
+Turn this product walkthrough video into Docsie documentation.
+Find the customer-facing setup steps for this feature.
+Create a draft article from the approved workspace knowledge.
 ```
 
 ## Links
@@ -119,4 +119,4 @@ Build an x402 payment request for 10,000 Docsie AI credits.
 
 ## Support
 
-For support, contact Docsie through the support channels on https://www.docsie.io/.
+For MCP directory and integration support, contact phil@docsie.io.
