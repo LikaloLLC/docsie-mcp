@@ -14,14 +14,8 @@ Permission packs separate read, write, import, publishing, billing, and agent-ru
 
 Billing tools are optional and require the `billing` permission pack. Stripe Checkout links require user completion. x402 payment requests are intended for x402-capable agent clients and grant credits only after payment settlement.
 
-Privacy policy:
+Privacy policy and terms:
 
 ```text
-https://www.docsie.io/privacy/
-```
-
-Terms:
-
-```text
-https://www.docsie.io/terms/
+https://terms.docsie.io/
 ```

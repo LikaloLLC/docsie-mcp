@@ -115,8 +115,7 @@ Build an x402 payment request for 10,000 Docsie AI credits.
 - Docsie: https://www.docsie.io/
 - App: https://app.docsie.io/
 - Documentation: https://docsie.com/
-- Privacy: https://www.docsie.io/privacy/
-- Terms: https://www.docsie.io/terms/
+- Privacy and terms: https://terms.docsie.io/
 
 ## Support
 
