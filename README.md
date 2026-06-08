@@ -1,6 +1,6 @@
 # Docsie MCP
 
-Docsie MCP is Docsie's remote Model Context Protocol server for documentation workflows, scoped knowledge retrieval, and video-to-docs automation.
+Docsie MCP is Docsie's hosted Model Context Protocol server for documentation workflows, scoped knowledge retrieval, article access, and video-to-docs automation.
 
 ## Remote Server
 
@@ -62,7 +62,18 @@ Docsie publishes MCP OAuth metadata at:
 
 ```text
 https://app.docsie.io/.well-known/oauth-authorization-server
+https://app.docsie.io/.well-known/oauth-authorization-server/mcp
 https://app.docsie.io/.well-known/oauth-protected-resource
+https://app.docsie.io/.well-known/oauth-protected-resource/mcp
+```
+
+OAuth endpoints:
+
+```text
+https://app.docsie.io/mcp/oauth/register/
+https://app.docsie.io/mcp/oauth/authorize/
+https://app.docsie.io/mcp/oauth/token/
+https://app.docsie.io/mcp/oauth/revoke/
 ```
 
 ## Permission Packs
@@ -71,7 +82,7 @@ Docsie MCP access is scoped by:
 
 - Docsie user identity
 - Selected organization
-- Selected default workspace
+- Selected workspace
 - Workspace membership
 - Explicit permission packs
 
@@ -86,6 +97,8 @@ Common permission packs include:
 - `agent_runs`: start, monitor, cancel, and fetch remote Docsie background agent runs
 
 Use the smallest permission pack set needed for your workflow.
+
+Organization-managed service credentials are also available for shared agents that should run with a fixed Docsie account instead of requiring every downstream user to log in. Service credentials are scoped to one organization, one selected workspace, and explicit permission packs.
 
 ## Paid Workflow Controls
 
