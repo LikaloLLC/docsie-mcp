@@ -2,11 +2,11 @@
 
 ## Short Description
 
-AI documentation, Docsie knowledge base search, article retrieval, and video-to-docs.
+AI documentation, video-to-docs, policy checks, templates, and knowledge search.
 
 ## Long Description
 
-Docsie MCP connects AI assistants to Docsie's AI documentation platform for trusted knowledge access and documentation automation. Teams can search approved knowledge bases, help centers, product docs, SOPs, release notes, and support articles; retrieve article content; turn videos into step-by-step documentation; generate and export docs; import files and web content; publish knowledge bases; and run scoped Docsie agents for larger documentation workflows. Access is controlled by Docsie OAuth or service credentials, selected workspaces, and explicit permission packs, so teams can start with read-only knowledge access and enable write, import, publishing, billing, or agent automation only when needed.
+Docsie MCP connects AI assistants to Docsie's AI documentation platform for trusted knowledge access and documentation automation. Teams can search approved knowledge bases, help centers, product docs, SOPs, release notes, and support articles; retrieve article content; turn videos into step-by-step documentation; fill customer Word templates from video analysis; check content against policy rules such as PII, HIPAA, brand, training QA, or custom policies; create presentation-ready outputs and live presenter sessions; import files and web content; publish knowledge bases; and run scoped Docsie agents for larger documentation workflows. Access is controlled by Docsie OAuth or service credentials, selected workspaces, and explicit permission packs, so teams can start with read-only knowledge access and enable write, import, publishing, billing, or agent automation only when needed.
 
 ## Categories
 
@@ -14,7 +14,7 @@ Documentation, Productivity, Knowledge Management, Developer Tools, Video
 
 ## Tags
 
-docsie, ai-documentation, documentation-automation, knowledge-base, knowledge-base-search, help-center, product-docs, support-docs, sop, standard-operating-procedure, video-to-docs, article-retrieval, docs, rag, document-generation, content-import, publishing, oauth, streamable-http
+docsie, ai-documentation, documentation-automation, knowledge-base, knowledge-base-search, help-center, product-docs, support-docs, sop, standard-operating-procedure, video-to-docs, word-template, compliance, policy-checks, article-retrieval, docs, rag, document-generation, content-import, publishing, oauth, streamable-http
 
 ## Contact Email
 
