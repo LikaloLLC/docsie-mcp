@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.docsie/docsie-mcp",
   "title": "Docsie MCP",
-  "description": "Docsie video-to-docs, workspace search, and article retrieval over remote MCP.",
+  "description": "AI documentation, Docsie knowledge base search, article retrieval, and video-to-docs.",
   "version": "0.1.0",
   "remotes": [
     {

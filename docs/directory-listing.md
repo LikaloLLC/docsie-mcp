@@ -2,11 +2,11 @@
 
 ## Short Description
 
-Remote MCP server for Docsie video-to-docs automation and workspace knowledge search.
+AI documentation, Docsie knowledge base search, article retrieval, and video-to-docs.
 
 ## Long Description
 
-Docsie MCP lets AI clients connect to Docsie through a standards-compliant remote MCP endpoint. Users authenticate with Docsie OAuth, choose an organization and workspace context, and grant permission packs for read-only knowledge retrieval, article lookup, video-to-docs workflows, agent runs, publishing tools, and optional paid workflow authorization. The server helps teams turn videos into documentation, answer questions from approved Docsie knowledge, and retrieve article content without granting broad account access.
+Docsie MCP connects AI assistants to Docsie's AI documentation platform for trusted knowledge access and documentation automation. Teams can search approved knowledge bases, help centers, product docs, SOPs, release notes, and support articles; retrieve article content; turn videos into step-by-step documentation; generate and export docs; import files and web content; publish knowledge bases; and run scoped Docsie agents for larger documentation workflows. Access is controlled by Docsie OAuth or service credentials, selected workspaces, and explicit permission packs, so teams can start with read-only knowledge access and enable write, import, publishing, billing, or agent automation only when needed.
 
 ## Categories
 
@@ -14,7 +14,7 @@ Documentation, Productivity, Knowledge Management, Developer Tools, Video
 
 ## Tags
 
-docsie, documentation, knowledge-base, docs, rag, video-to-docs, oauth, streamable-http, customer-support, knowledge-search
+docsie, ai-documentation, documentation-automation, knowledge-base, knowledge-base-search, help-center, product-docs, support-docs, sop, standard-operating-procedure, video-to-docs, article-retrieval, docs, rag, document-generation, content-import, publishing, oauth, streamable-http
 
 ## Contact Email
 

@@ -1,6 +1,6 @@
 # Docsie MCP
 
-Docsie MCP is Docsie's hosted Model Context Protocol server for documentation workflows, scoped knowledge retrieval, article access, and video-to-docs automation.
+Docsie MCP connects AI assistants to Docsie's AI documentation platform for knowledge base search, help center and product documentation retrieval, video-to-docs automation, documentation generation, content imports, publishing workflows, and scoped Docsie agent runs.
 
 ## Remote Server
 
@@ -26,11 +26,13 @@ OAuth2 Authorization Code + PKCE
 
 Docsie MCP lets MCP-compatible AI clients connect to Docsie so users can:
 
-- List accessible Docsie workspaces
-- Search Docsie knowledge
-- Fetch Docsie article content
-- Run scoped Docsie AI workflows
-- Submit and monitor video-to-docs jobs
+- Search approved knowledge bases, help centers, product docs, SOPs, release notes, and support articles
+- Retrieve article content and workspace structure from Docsie
+- Turn product demos, training videos, screen recordings, and walkthroughs into step-by-step documentation
+- Generate, rewrite, translate, and export documentation as Markdown, DOCX, PDF, or PPTX
+- Import files, websites, and extracted web content into Docsie documentation workflows
+- Publish knowledge bases, in-app help, custom domains, forms, and file-request workflows when granted
+- Delegate complex documentation tasks to scoped Docsie AI agents
 - Request approved payment options for extended Docsie automation workflows
 
 Users authenticate with Docsie, choose an organization and workspace context, and grant explicit permission packs before tools are exposed.
