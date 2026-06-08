@@ -26,4 +26,4 @@ High
 
 ## Security Notes
 
-Docsie MCP uses OAuth2 Authorization Code + PKCE. Access is scoped by Docsie user, organization, selected default workspace, and explicit permission packs. Read, write, import, publishing, agent-run, and billing capabilities are separately granted. Agentic payment tools require the billing permission pack. Paid workflow access is unlocked only after facilitator verification and settlement; Docsie stores only the public receiving address, not wallet private keys.
+Docsie MCP uses OAuth2 Authorization Code + PKCE. Access is scoped by Docsie user or service credential, organization, selected workspace, and explicit permission packs. Read, write, import, publishing, agent-run, and billing capabilities are separately granted. Agentic payment tools require the billing permission pack. Paid workflow access is unlocked only after facilitator verification and settlement; Docsie stores only the public receiving address, not wallet private keys.

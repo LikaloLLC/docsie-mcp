@@ -13,4 +13,4 @@ Add a remote MCP server:
 }
 ```
 
-After connecting, Cursor should send you through Docsie OAuth. Choose the organization, default workspace, and permission packs needed for your workflow.
+After connecting, Cursor should send you through Docsie OAuth. Choose the organization, workspace, and permission packs needed for your workflow.

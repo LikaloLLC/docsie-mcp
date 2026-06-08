@@ -8,4 +8,4 @@ Server URL:
 https://app.docsie.io/mcp
 ```
 
-Claude should discover OAuth metadata and route you through Docsie authorization. Choose the organization, default workspace, and permission packs needed for the connector.
+Claude should discover OAuth metadata and route you through Docsie authorization. Choose the organization, workspace, and permission packs needed for the connector.
