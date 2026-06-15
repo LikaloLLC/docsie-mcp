@@ -62,6 +62,24 @@ Exact syntax varies by client. The stable server URL is:
 https://app.docsie.io/mcp
 ```
 
+Client-specific setup drafts:
+
+- [Claude](docs/clients/claude.md)
+- [ChatGPT / OpenAI](docs/clients/chatgpt.md)
+- [Cursor](docs/clients/cursor.md)
+- [Windsurf](docs/clients/windsurf.md)
+- [VS Code](docs/clients/vscode.md)
+- [GitHub Copilot](docs/clients/github-copilot.md)
+- [Smithery](docs/clients/smithery.md)
+- [mcp-remote](docs/clients/mcp-remote.md)
+
+Local-only MCP clients can also use:
+
+- npm stdio wrapper: `npx -y @docsie/mcp`
+- PyPI / uvx stdio wrapper: `uvx docsie-mcp`
+
+Example configs are in [`examples/`](examples/).
+
 ## OAuth Discovery
 
 Docsie publishes MCP OAuth metadata at:
@@ -106,6 +124,14 @@ Common permission packs include:
 Use the smallest permission pack set needed for your workflow.
 
 Organization-managed service credentials are also available for shared agents that should run with a fixed Docsie account instead of requiring every downstream user to log in. Service credentials are scoped to one organization, one selected workspace, and explicit permission packs.
+
+More details:
+
+- [Tools](docs/tools.md)
+- [Privacy and Permissions](docs/privacy-and-permissions.md)
+- [Security](docs/security.md)
+- [Service Tokens](docs/service-tokens.md)
+- [Troubleshooting](docs/troubleshooting.md)
 
 ## Paid Workflow Controls
 
