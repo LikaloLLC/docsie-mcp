@@ -3,8 +3,20 @@
   "version": "0.1.0",
   "description": "Local stdio bridge for the hosted Docsie MCP server.",
   "type": "module",
+  "homepage": "https://github.com/LikaloLLC/docsie-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LikaloLLC/docsie-mcp.git",
+    "directory": "mcp-packages/npm"
+  },
+  "bugs": {
+    "url": "https://github.com/LikaloLLC/docsie-mcp/issues"
+  },
   "bin": {
-    "docsie-mcp": "./bin/docsie-mcp.js"
+    "docsie-mcp": "bin/docsie-mcp.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "bin/",

@@ -22,5 +22,11 @@ classifiers = [
 [project.scripts]
 docsie-mcp = "docsie_mcp.cli:main"
 
+[project.urls]
+Homepage = "https://github.com/LikaloLLC/docsie-mcp"
+Repository = "https://github.com/LikaloLLC/docsie-mcp"
+Documentation = "https://github.com/LikaloLLC/docsie-mcp#readme"
+Issues = "https://github.com/LikaloLLC/docsie-mcp/issues"
+
 [tool.hatch.build.targets.wheel]
 packages = ["docsie_mcp"]
