@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "docsie": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://app.docsie.io/mcp"
+      ]
+    }
+  }
+}

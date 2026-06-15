@@ -1,0 +1,22 @@
+{
+  "name": "docsie-mcp",
+  "version": "0.1.0",
+  "description": "Connect AI agents to Docsie documentation search, video-to-docs, templates, policy checks, publishing workflows, and scoped Docsie agent runs.",
+  "author": {
+    "name": "Docsie",
+    "email": "phil@docsie.io",
+    "url": "https://www.docsie.io/"
+  },
+  "homepage": "https://github.com/LikaloLLC/docsie-mcp",
+  "repository": "https://github.com/LikaloLLC/docsie-mcp",
+  "license": "MIT",
+  "keywords": [
+    "docsie",
+    "mcp",
+    "documentation",
+    "knowledge-base",
+    "video-to-docs",
+    "ai-documentation"
+  ],
+  "mcpServers": "./.mcp.json"
+}

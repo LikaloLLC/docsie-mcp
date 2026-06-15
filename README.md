@@ -62,6 +62,28 @@ Exact syntax varies by client. The stable server URL is:
 https://app.docsie.io/mcp
 ```
 
+## Open Plugins / Cursor Store
+
+This repo includes Open Plugins discovery files at the repo root:
+
+- `.plugin/plugin.json`
+- `.cursor-plugin/plugin.json`
+- `.mcp.json`
+- `mcp.json`
+
+The Open Plugins MCP component uses `mcp-remote` to bridge local stdio plugin hosts to Docsie's hosted OAuth MCP endpoint:
+
+```json
+{
+  "mcpServers": {
+    "docsie": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://app.docsie.io/mcp"]
+    }
+  }
+}
+```
+
 Client-specific setup drafts:
 
 - [Claude](docs/clients/claude.md)
