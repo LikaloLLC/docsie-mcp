@@ -78,7 +78,7 @@ Local-only MCP clients can also use:
 - npm stdio wrapper: `npx -y @docsie/mcp`
 - PyPI / uvx stdio wrapper: `uvx docsie-mcp`
 
-Example configs are in [`examples/`](examples/).
+Wrapper source is in [`mcp-packages/`](mcp-packages/). Example configs are in [`examples/`](examples/).
 
 ## OAuth Discovery
 

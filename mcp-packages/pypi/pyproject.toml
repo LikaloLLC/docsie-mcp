@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "docsie-mcp"
+version = "0.1.0"
+description = "Local stdio bridge for the hosted Docsie MCP server."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+authors = [
+  { name = "Docsie" }
+]
+keywords = ["docsie", "mcp", "model-context-protocol", "documentation", "video-to-docs"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12"
+]
+
+[project.scripts]
+docsie-mcp = "docsie_mcp.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["docsie_mcp"]

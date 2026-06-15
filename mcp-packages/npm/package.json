@@ -1,0 +1,27 @@
+{
+  "name": "@docsie/mcp",
+  "version": "0.1.0",
+  "description": "Local stdio bridge for the hosted Docsie MCP server.",
+  "type": "module",
+  "bin": {
+    "docsie-mcp": "./bin/docsie-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "docsie",
+    "mcp",
+    "model-context-protocol",
+    "documentation",
+    "video-to-docs"
+  ],
+  "license": "UNLICENSED"
+}
