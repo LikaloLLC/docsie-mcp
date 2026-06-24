@@ -33,7 +33,7 @@ Each service token is scoped to:
   "mcpServers": {
     "docsie": {
       "command": "npx",
-      "args": ["-y", "@docsie/mcp"],
+      "args": ["-y", "docsie-mcp"],
       "env": {
         "DOCSIE_MCP_TOKEN": "mcp_sa_...",
         "DOCSIE_MCP_ENDPOINT": "https://app.docsie.io/mcp"

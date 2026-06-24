@@ -26,7 +26,7 @@ function runBridge(messages, env = {}) {
   });
 }
 
-describe("@docsie/mcp local bridge", () => {
+describe("docsie-mcp local bridge", () => {
   it("responds to initialize locally", async () => {
     const [response] = await runBridge([
       { jsonrpc: "2.0", id: 1, method: "initialize", params: { protocolVersion: "2025-06-18" } }

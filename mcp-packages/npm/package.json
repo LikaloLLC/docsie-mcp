@@ -1,5 +1,5 @@
 {
-  "name": "@docsie/mcp",
+  "name": "docsie-mcp",
   "version": "0.1.0",
   "description": "Local stdio bridge for the hosted Docsie MCP server.",
   "type": "module",

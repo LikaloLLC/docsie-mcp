@@ -1,4 +1,4 @@
-# @docsie/mcp
+# docsie-mcp
 
 Local stdio bridge for the hosted Docsie MCP server.
 
@@ -11,7 +11,7 @@ Use this package for MCP clients or directories that require a locally-run stdio
   "mcpServers": {
     "docsie": {
       "command": "npx",
-      "args": ["-y", "@docsie/mcp"],
+      "args": ["-y", "docsie-mcp"],
       "env": {
         "DOCSIE_MCP_TOKEN": "mcp_sa_...",
         "DOCSIE_MCP_ENDPOINT": "https://app.docsie.io/mcp"
@@ -29,7 +29,7 @@ The first version expects a Docsie MCP service token:
 
 ```bash
 export DOCSIE_MCP_TOKEN=mcp_sa_...
-npx -y @docsie/mcp
+npx -y docsie-mcp
 ```
 
 The token is sent as:

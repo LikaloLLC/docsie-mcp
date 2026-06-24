@@ -14,7 +14,7 @@ These packages are thin bridges. They read MCP JSON-RPC messages from stdio, for
 
 | Package | Directory | Command | Status |
 | --- | --- | --- | --- |
-| `@docsie/mcp` | `mcp-packages/npm` | `npx -y @docsie/mcp` | Source ready; npm publish pending. |
+| `docsie-mcp` | `mcp-packages/npm` | `npx -y docsie-mcp` | Source ready; npm publish pending. |
 | `docsie-mcp` | `mcp-packages/pypi` | `uvx docsie-mcp` | Source ready; PyPI publish pending. |
 
 ## Authentication
@@ -48,7 +48,7 @@ Example MCP config:
   "mcpServers": {
     "docsie": {
       "command": "npx",
-      "args": ["-y", "@docsie/mcp"],
+      "args": ["-y", "docsie-mcp"],
       "env": {
         "DOCSIE_MCP_TOKEN": "mcp_sa_...",
         "DOCSIE_MCP_ENDPOINT": "https://app.docsie.io/mcp"

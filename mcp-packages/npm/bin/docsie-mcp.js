@@ -51,7 +51,7 @@ async function forwardToDocsie(payload) {
       "Content-Type": "application/json",
       "Accept": "application/json",
       "MCP-Protocol-Version": PROTOCOL_VERSION,
-      "User-Agent": "@docsie/mcp local-stdio-bridge/0.1.0"
+      "User-Agent": "docsie-mcp local-stdio-bridge/0.1.0"
     },
     body: JSON.stringify(payload)
   });

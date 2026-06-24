@@ -23,4 +23,4 @@ Use `mcp-remote` when a local stdio MCP client needs to connect to Docsie's host
 
 - Verify this works against production with OAuth.
 - Add screenshots.
-- Add client-specific examples where this is preferred over `@docsie/mcp`.
+- Add client-specific examples where this is preferred over `docsie-mcp`.
