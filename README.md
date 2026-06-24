@@ -102,6 +102,45 @@ Local-only MCP clients can also use:
 
 Wrapper source is in [`mcp-packages/`](mcp-packages/). Example configs are in [`examples/`](examples/).
 
+## Verification
+
+Wrapper unit tests:
+
+```bash
+npm test --prefix mcp-packages/npm
+python -m pytest mcp-packages/pypi/tests
+```
+
+Live smoke test against the hosted server:
+
+```bash
+DOCSIE_MCP_ENDPOINT=https://staging.docsie.io/mcp \
+DOCSIE_MCP_TOKEN=... \
+node scripts/verify-live-tools.mjs
+```
+
+To test a different local bridge command:
+
+```bash
+DOCSIE_MCP_COMMAND="uvx docsie-mcp" \
+DOCSIE_MCP_TOKEN=... \
+node scripts/verify-live-tools.mjs
+```
+
+The live smoke verifies `initialize`, `tools/list`, required Docsie tools, JSON Schema shape, tool titles, and MCP tool annotations.
+
+To also verify safe live tool calls:
+
+```bash
+DOCSIE_MCP_ENDPOINT=https://staging.docsie.io/mcp \
+DOCSIE_MCP_TOKEN=... \
+DOCSIE_MCP_VERIFY_CALLS=1 \
+DOCSIE_MCP_EXPECTED_WORKSPACE_ID=workspace_... \
+node scripts/verify-live-tools.mjs
+```
+
+The call check verifies scoped workspace discovery through `list_workspaces` and non-mutating video credit estimation through `video_to_docs_estimate`.
+
 ## OAuth Discovery
 
 Docsie publishes MCP OAuth metadata at:
