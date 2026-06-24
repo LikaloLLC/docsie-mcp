@@ -141,6 +141,29 @@ node scripts/verify-live-tools.mjs
 
 The call check verifies scoped workspace discovery through `list_workspaces` and non-mutating video credit estimation through `video_to_docs_estimate`.
 
+Real video-to-docs E2E smoke, for staging only:
+
+```bash
+DOCSIE_MCP_ENDPOINT=https://staging.docsie.io/mcp \
+DOCSIE_MCP_TOKEN=... \
+DOCSIE_MCP_E2E_CONFIRM=1 \
+DOCSIE_MCP_E2E_VIDEO_URL=https://example.com/small-video.mp4 \
+DOCSIE_MCP_E2E_WORKSPACE_ID=workspace_... \
+node scripts/verify-video-to-docs-e2e.mjs
+```
+
+This creates a real video-to-docs job, polls analysis to completion, runs generation, verifies generated Docsie document links/content, and consumes Docsie AI credits. The script sets `auto_generate=false` by default so the E2E controls the generation step explicitly. Optional export verification is available with `DOCSIE_MCP_E2E_EXPORT_FORMATS=docx`.
+
+To resume or verify a staging run without submitting a new video:
+
+```bash
+DOCSIE_MCP_ENDPOINT=https://staging.docsie.io/mcp \
+DOCSIE_MCP_TOKEN=... \
+DOCSIE_MCP_E2E_CONFIRM=1 \
+DOCSIE_MCP_E2E_EXISTING_FINAL_JOB_ID=job_key_... \
+node scripts/verify-video-to-docs-e2e.mjs
+```
+
 ## OAuth Discovery
 
 Docsie publishes MCP OAuth metadata at:
