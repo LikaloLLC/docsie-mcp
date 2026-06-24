@@ -33,6 +33,47 @@ ChatGPT may emit alternate argument names for video URLs. Docsie accepts:
 - `video_link`
 - `source_video_url`
 
+## Tool Selection Guidance
+
+For simple deterministic jobs, ChatGPT should use the direct tools:
+
+```text
+video_to_docs_submit
+video_to_docs_status
+video_to_docs_result
+```
+
+For workflows that should behave like Docsie Chat, ChatGPT should use:
+
+```text
+docsie_agent_start
+docsie_agent_status
+docsie_agent_result
+```
+
+Use `docsie_agent_start` when the user asks for a complete documentation workflow, for example:
+
+- analyze a video, generate docs, rewrite the output, and return the final Docsie link
+- fill a Word/DOCX template from a video
+- compare or combine videos and produce a final draft
+- run policy/compliance checks before creating docs
+- import, finalize, publish, or otherwise continue after generation
+- wait for long-running Docsie operations
+
+`docsie_agent_start` creates a hidden Docsie chat session. The Docsie-side agent can use internal session-bound tools such as video analysis, documentation generation, active-operation monitoring, waits, imports, and rewrites. ChatGPT only needs to keep the returned `agent_run_id` and poll status/result.
+
+Example prompt to test:
+
+```text
+Use the Docsie remote agent to analyze this video, generate step-by-step documentation, rewrite it as a release note, import it into Docsie, and return the final article link: https://example.com/demo.mp4
+```
+
+Expected high-level MCP call sequence:
+
+```text
+docsie_agent_start -> docsie_agent_status -> docsie_agent_result
+```
+
 ## TODO(andrei)
 
 - Add exact ChatGPT setup flow.

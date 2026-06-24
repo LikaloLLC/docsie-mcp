@@ -41,6 +41,26 @@ Docsie MCP lets MCP-compatible AI clients connect to Docsie so users can:
 
 Users authenticate with Docsie, choose an organization and workspace context, and grant explicit permission packs before tools are exposed.
 
+## Tool Routing Model
+
+Docsie MCP exposes two complementary ways to automate Docsie:
+
+| Use case | Use these tools | Why |
+| --- | --- | --- |
+| Simple API-style jobs | `video_to_docs_submit`, `video_to_docs_status`, `video_to_docs_result`, `video_compare_submit`, `video_compare_status`, `video_compare_result` | The MCP client submits a job, keeps the returned `job_id`, and polls status/result directly. |
+| Docsie Chat-style workflows | `docsie_agent_start`, `docsie_agent_status`, `docsie_agent_result` | Docsie creates a hidden chat session and lets the Docsie agent orchestrate multi-step work internally. |
+
+Use `docsie_agent_start` for complex natural-language workflows such as:
+
+- analyze a video with Dokuta, wait for completion, generate documentation, rewrite it, and import it
+- fill a Word/DOCX template from a video or generated documentation
+- compare or combine videos and produce a final documentation draft
+- run policy/compliance checks and summarize findings
+- publish or finalize generated Docsie content after creation
+- any workflow that should behave like the in-app Docsie Chat assistant
+
+The remote agent can use Docsie's internal session-bound tools, including operation monitoring, because the agent run owns a Docsie chat session. Direct MCP job tools are intentionally job-ID based and should be used for simpler deterministic automation.
+
 ## Install
 
 Use this server configuration in MCP clients that support remote HTTP servers:
